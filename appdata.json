@@ -1,0 +1,9 @@
+{
+  "web": false,
+  "languages": [
+    "en",
+    "jp",
+    "cn"
+  ],
+  "currLang": null
+}

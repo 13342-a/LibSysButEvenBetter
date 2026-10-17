@@ -12,5 +12,7 @@ namespace Util
 		~SQLManager() = default;
 		SQLManager(SQLManager& other) = default;
 		SQLManager& operator= (SQLManager& other) = default;
+	
+	
 	};
 }

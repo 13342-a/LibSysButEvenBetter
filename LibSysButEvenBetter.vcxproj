@@ -136,6 +136,7 @@
     <ClInclude Include="edition.hpp" />
     <ClInclude Include="json.hpp" />
     <ClInclude Include="SQLManager.hpp" />
+    <ClInclude Include="sql_install.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />

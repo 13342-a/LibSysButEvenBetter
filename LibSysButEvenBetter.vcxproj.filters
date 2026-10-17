@@ -41,6 +41,9 @@
     <ClInclude Include="edition.hpp">
       <Filter>Header Files\structs</Filter>
     </ClInclude>
+    <ClInclude Include="sql_install.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt">

@@ -10,7 +10,7 @@ namespace Util
 		std::string username;
 		std::string pwd;
 	public:
-		SQLManager();
+		SQLManager(const std::string& dbName, const std::string& userName, const std::string& pwd);
 		~SQLManager() = default;
 		SQLManager(SQLManager& other) = default;
 		SQLManager& operator= (SQLManager& other) = default;

@@ -16,19 +16,34 @@
     <Filter Include="Header Files\structs">
       <UniqueIdentifier>{26fb6c29-0fef-4472-881a-4c05551e7e01}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\SQLManagers">
+      <UniqueIdentifier>{83eb9cf1-89ea-4e95-b97e-330cf5b1180c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SQLManagers\mysql">
+      <UniqueIdentifier>{87677440-d583-40db-947b-4fa96aa76082}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SQLManagers\sqlite">
+      <UniqueIdentifier>{43d1e38b-6ef0-4346-8b16-fbadb1c3c7ac}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SQLManager.cpp">
+    <ClCompile Include="MySQLManager.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SQLiteManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SQLinterface.hpp">
+      <Filter>Header Files\SQLManagers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SQLManager.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="json.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -41,8 +56,17 @@
     <ClInclude Include="edition.hpp">
       <Filter>Header Files\structs</Filter>
     </ClInclude>
-    <ClInclude Include="sql_install.hpp">
+    <ClInclude Include="sqlite3.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql_install.hpp">
+      <Filter>Header Files\SQLManagers\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQLManager.hpp">
+      <Filter>Header Files\SQLManagers\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="SQLiteManager.hpp">
+      <Filter>Header Files\SQLManagers\sqlite</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

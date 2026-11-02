@@ -128,15 +128,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="SQLManager.cpp" />
+    <ClCompile Include="MySQLManager.cpp" />
+    <ClCompile Include="SQLinterface.hpp" />
+    <ClCompile Include="sqlite3.c" />
+    <ClCompile Include="SQLiteManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="book.hpp" />
     <ClInclude Include="copy.hpp" />
     <ClInclude Include="edition.hpp" />
     <ClInclude Include="json.hpp" />
-    <ClInclude Include="SQLManager.hpp" />
-    <ClInclude Include="sql_install.hpp" />
+    <ClInclude Include="MySQLManager.hpp" />
+    <ClInclude Include="mysql_install.hpp" />
+    <ClInclude Include="sqlite3.h" />
+    <ClInclude Include="SQLiteManager.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />

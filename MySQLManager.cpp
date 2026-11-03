@@ -10,7 +10,9 @@ MySQLManager::MySQLManager(const std::string& dbName, const std::string& userNam
 
 }
 
+using Entry = std::vector<std::string>;
+using QueryRes = std::vector<Entry>;
 //result of query, nullopt if fail
-std::optional<MySQLManager::QueryRes> MySQLManager::query(const std::string& query) const {
+std::optional<QueryRes> MySQLManager::query(const std::string& query) const {
 	return std::nullopt;
 }

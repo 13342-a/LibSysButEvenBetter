@@ -1,11 +1,14 @@
-#include <mysqlx/xdevapi.h>
+#include "SQLinterface.hpp"
+
 #include <string>
 #include <optional>
 #include <vector>
 
 namespace Util
 {
-	class MySQLManager {
+	class MySQLManager : public ISQLManager
+	{
+		static constexpr bool done = false;
 		std::string dbname;
 		std::string username;
 		std::string pwd;
@@ -18,6 +21,6 @@ namespace Util
 		using Entry = std::vector<std::string>;
 		using QueryRes = std::vector<Entry>;
 		//result of query, nullopt if fail
-		std::optional<QueryRes> query(const std::string& query) const;
+		std::optional<QueryRes> query(const std::string& query) const override;
 	};
 }

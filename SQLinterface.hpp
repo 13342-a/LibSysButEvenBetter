@@ -1,4 +1,6 @@
 //interface for polymorphism for MySQL vs SQLite
+#pragma once
+
 #include <string>
 #include <vector>
 #include <optional>
@@ -19,8 +21,8 @@ namespace Util
 
 		virtual bool disconnect() = 0;
 
-		virtual std::string& getErr() = 0;
+		virtual std::string& getErr() const = 0;
 
-		virtual std::string& getName() = 0;
+		virtual std::string& getName() const = 0;
 	};
 }

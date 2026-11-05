@@ -1,3 +1,5 @@
+#pragma once
+
 #include "SQLinterface.hpp"
 
 #include "sqlite3.h"
@@ -21,5 +23,12 @@ namespace Util
 		//result of query, nullopt if fail
 		std::optional<QueryRes> query(const std::string& query) const override;
 
+		bool connect() override;
+
+		bool disconnect() override;
+
+		std::string& getErr() const override;
+
+		std::string& getName() const override;
 	};
 }

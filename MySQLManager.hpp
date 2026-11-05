@@ -16,7 +16,7 @@ namespace Util
 		std::string pwd;
 	public:
 		MySQLManager(const std::string& dbName, const std::string& userName, const std::string& pwd);
-		~MySQLManager() = default;
+		~MySQLManager() override = default;
 		MySQLManager(MySQLManager& other) = default;
 		MySQLManager& operator= (MySQLManager& other) = default;
 
@@ -24,5 +24,13 @@ namespace Util
 		using QueryRes = std::vector<Entry>;
 		//result of query, nullopt if fail
 		std::optional<QueryRes> query(const std::string& query) const override;
+
+		void connect() override;
+
+		void disconnect() override;
+
+		std::string getErr() const override;
+
+		std::string getName() const override;
 	};
 }

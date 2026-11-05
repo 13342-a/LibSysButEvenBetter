@@ -16,3 +16,19 @@ using QueryRes = std::vector<Entry>;
 std::optional<QueryRes> MySQLManager::query(const std::string& query) const {
 	return std::nullopt;
 }
+
+void MySQLManager::connect() {
+	return;
+}
+
+void MySQLManager::disconnect() {
+	return;
+}
+
+std::string MySQLManager::getErr() const {
+	return std::string("");
+}
+
+std::string MySQLManager::getName() const {
+	return std::string("");
+}
